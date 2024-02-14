@@ -1,4 +1,4 @@
-Workshop 1:
+# Workshop 1:
 Your website features books. Each book has title, author, 
 genre and number of pages.
 - Create an array of 5 book objects of your choice.

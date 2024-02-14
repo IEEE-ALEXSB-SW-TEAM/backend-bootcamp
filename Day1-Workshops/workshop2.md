@@ -1,10 +1,11 @@
-Workshop 2:
+# Workshop 2:
 You have witnessed the suduko api we just used.
 Now that you have access to this api, 3 of your
 friends want to try out sudoku and asked if you
 could help. 
-Api gateway http://192.168.209.183:5000/api/getSudokuGame
-Make sure you are connected on Bootcamp 1 (not 2 or 3)
+Api gateway 
+https://sudoku-api.vercel.app/api/dosuku?query={newboard(limit:1){grids{value,solution,difficulty}}}
+Make sure you are connected to the internet
 - Use promises, async, await, fetch to get 3 
 sudoku objects, while pushing them to an array 
 - ⁠Create a function that gets an index and 
