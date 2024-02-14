@@ -12,7 +12,7 @@ console.log(json);
 
 const fs = require("fs");
 
-fs.writeFile("test.json", json, "utf-8", function (err) {
+fs.writeFile("../test-data/test.json", json, "utf-8", function (err) {
   if (err) {
     console.log(err);
   } else {
