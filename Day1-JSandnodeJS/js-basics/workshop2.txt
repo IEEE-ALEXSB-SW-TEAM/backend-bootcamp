@@ -1,0 +1,13 @@
+Workshop 2:
+You have witnessed the suduko api we just used.
+Now that you have access to this api, 3 of your
+friends want to try out sudoku and asked if you
+could help. 
+Api gateway http://192.168.209.183:5000/api/getSudokuGame
+Make sure you are connected on Bootcamp 1 (not 2 or 3)
+- Use promises, async, await, fetch to get 3 
+sudoku objects, while pushing them to an array 
+- ⁠Create a function that gets an index and 
+outputs only the sudoku game without the solution
+- ⁠Create a function that gets an index and 
+outputs the sudoku solution

@@ -1,6 +1,7 @@
 //  Javascript Nuggets
 //  Timestamps
 console.log(new Date());
+console.log(Date.now());
 
 // Unix Time
 // January 1, 1970
@@ -43,7 +44,7 @@ setTimeout(() => {
   }
   posts.push(newPost)
   console.log(posts)
+  console.log(posts.at(-1))
+  console.log(posts.at(0))
 }, 3000);
 
-console.log(posts.at(-1))
-console.log(posts.at(0))

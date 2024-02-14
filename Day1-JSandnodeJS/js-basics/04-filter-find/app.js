@@ -25,8 +25,8 @@ console.log(recentPosts);
 
 // no match
 // Explain inlcudes
-const uncensoredPosts = posts.filter((post) => post.content.includes('curse word'));
-console.log(uncensoredPosts);
+// const uncensoredPosts = posts.filter((post) => post.includes('curse word'));
+// console.log(uncensoredPosts);
 
 // find
 const firstPost = posts.find((post) => post.postIndex === 1);

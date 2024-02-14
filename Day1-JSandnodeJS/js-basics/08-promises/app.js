@@ -11,7 +11,7 @@ const promise = new Promise((resolve, reject) => {
   const random = Math.floor(Math.random() * 3)
   console.log(random)
   if (random === value) {
-    resolve('you guessed correctly')
+    resolve(`${random} is correct`)
   } else {
     reject('wrong number')
   }
@@ -19,4 +19,6 @@ const promise = new Promise((resolve, reject) => {
 
 console.log(promise)
 
-promise.then((data) => console.log(data)).catch((err) => console.log(err))
+promise
+.then((data) => console.log(data))
+.catch((err) => console.log(err))

@@ -8,11 +8,14 @@ const example = async () => {
   return 'Anybody here?'
 }
 
+console.log(example().then(data=>console.log(data)))
+
 async function someFunc() {
   const result = await example()
   console.log(result)
-  console.log('Guess not, lol')
 }
+
+someFunc()
 
 const users = [
   { id: 1, name: 'john' },
