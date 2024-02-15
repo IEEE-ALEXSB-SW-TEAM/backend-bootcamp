@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get GPA</title>
+</head>
+<body>
+    <h1>Get GPA</h1>
+    <button id="getGpaButton">Get GPA</button>
+    <div id="gpaDisplay"></div>
+
+    <script>
+        const token = localStorage.getItem('token');
+        if (!token) {
+            window.location.href = '/signin.html';
+        }
+
+        document.getElementById('getGpaButton').addEventListener('click', async () => {
+            try {
+                const response = await fetch('/getGpa', {
+                    headers: {
+                        Authorization: token
+                    }
+                });
+                const data = await response.json();
+                document.getElementById('gpaDisplay').innerText = `GPA: ${data.gpa}`;
+            } catch (error) {
+                console.error(error);
+            }
+        });
+    </script>
+</body>
+</html>

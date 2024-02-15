@@ -1,0 +1,84 @@
+// insert to movies one
+db.movies.insertOne({
+    title: "el-lemby",
+    director: "el-sobky",
+    year: 2000,
+    genre: ["Comedy", "Adventure"]
+})
+
+// insert many movies
+db.movies.insertMany([
+    {
+        title: "7amlet freezer",
+        director: "lol1",
+        year: 2019,
+        genre: ["Comedy"]
+    },
+    {
+        title: "keda reda",
+        director: "lol2",
+        year: 2007,
+        genre: ["Comedy", "Drama"]
+    },
+    {
+        title: "Bo4ka4",
+        director: "lol3",
+        year: 2008,
+        genre: ["Comedy", "Drama"]
+    }
+])
+
+// read examples
+db.movies.find()
+
+db.movies.find({ director: "Christopher Nolan" })
+
+db.movies.find({}, { title: 1, year: 1 })
+
+db.movies.find({ genre: "Action" })
+
+db.movies.findOne({ title: "Inception" })
+
+db.movies.find().sort({ year: 1 })
+
+db.movies.find({ year: { $gt: 2000 } })
+
+// Update
+db.collection_name.updateOne(filter, update, options)
+db.collection_name.updateMany(filter, update, options)
+
+db.movies.updateOne(
+    { title: "Inception" },
+    { $set: { director: "Christopher Nolan", year: 2010 } }
+)
+
+db.movies.updateMany(
+    { director: "Christopher Nolan" },
+    { $set: { rating: "PG-13" } }
+)
+
+db.movies.updateOne(
+    { title: "The Dark Knight" },
+    { $inc: { likes: 100 } }
+)
+
+db.movies.updateOne(
+    { title: "Inception" },
+    { $push: { genre: "Thriller" } }
+)
+
+db.movies.updateOne(
+    { title: "Interstellar" },
+    { $set: { director: "Christopher Nolan", year: 2014 } },
+    { upsert: true }
+)
+
+//delete
+db.collection_name.deleteOne(filter)
+db.collection_name.deleteMany(filter)
+
+db.movies.deleteOne({ title: "Inception" })
+db.movies.deleteMany({ director: "Christopher Nolan" })
+
+db.movies.deleteMany({})
+db.movies.deleteMany({ year: { $lt: 2000 } })

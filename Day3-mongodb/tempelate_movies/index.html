@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Greatest Movies Website</h1>
+    <h3>Show all films </h3>
+    <form method="get" action="/films">
+        <input type="submit" value="Show"></input>
+    </form>
+    <h3>Add new film: </h3>
+    <form method="post" action="/addFilm">
+        <label>Enter the movie title: </label>
+        <input type="text" id="title" name="title"></input>
+        <br></br>
+        <label>Enter the movie directory: </label>
+        <input type="text" id="dir" name="dir"></input>
+        <br></br>
+        <label>Enter the movie year: </label>
+        <input type="text" id="year" name="year"></input>
+        <br></br>
+        <label>Enter the movie geners(comma separated): </label>
+        <input type="text" id="geners" name="geners"></input>
+        <br></br>
+        <input type="submit" value="Add"></input>
+    </form>
+    <h3>Search for a film by name: </h3>
+    <form method="post" action="/search">
+        <label>Enter film name: </label>
+        <input type="text" id="name" name="title"></input>
+        <br></br>
+        <input type="submit" value="Search"></input>
+    </form>
+    <h3>update film information: </h3>
+    <form method="post" action="/update">
+        <label>Enter the movie title: </label>
+        <input type="text" id="oldtitle" name="oldtitle"></input>
+        <br></br>
+        <label>Enter the movie new title: </label>
+        <input type="text" id="title" name="title"></input>
+        <br></br>
+        <label>Enter the movie new directory: </label>
+        <input type="text" id="dir" name="dir"></input>
+        <br></br>
+        <label>Enter the movie new year: </label>
+        <input type="text" id="year" name="year"></input>
+        <br></br>
+        <label>Enter the movie new geners(comma separated): </label>
+        <input type="text" id="geners" name="geners"></input>
+        <br></br>
+        <input type="submit" value="Update"></input>
+    </form>
+    <h3>Delete a film: </h3>
+    <form method="post" action="/Delete">
+        <label>Enter film name: </label>
+        <input type="text" id="name" name="title"></input>
+        <br></br>
+        <input type="submit" value="Delete"></input>
+    </form>
+    <script src="./app.js"></script>
+</body>
+</html>
