@@ -1,4 +1,5 @@
-# MongoDB
+# Databases and MongoDB
+these are a bullet points of our session
 
 ## some history about data and databases
 - we need to store things
@@ -49,7 +50,6 @@ MongoDB is an [open source](https://github.com/mongodb/mongo) NoSQL database man
 
 ## install mongodb
 - locally
-    - run mongo server --> sudo systemctl start mongod
 - use atlas
 
 ## connect using
@@ -68,6 +68,7 @@ MongoDB is an [open source](https://github.com/mongodb/mongo) NoSQL database man
 
 ## CRUD operations
 - [documentation](https://www.mongodb.com/docs/manual/crud/)
+- you can find code examples [here](./CRUD-examples/)
 - create database
     - use <db>
     - createCollection(<collection_name>)
@@ -121,11 +122,3 @@ MongoDB is an [open source](https://github.com/mongodb/mongo) NoSQL database man
 ## Restful API
 
 ## Authentication and Authorization
-
-## college example
-- models --> student and professor
-- seed script
-- rest api
-
-
-mongodb://192.168.1.7:27017

@@ -1,6 +1,8 @@
 # Final Project
+this project is a modified version of dejwid project, you can find the original project [here](https://github.com/dejwid/mern-blog/tree/master) and you can find his youtube video building the project [here](https://www.youtube.com/watch?v=xKs2IZZya7c)
 
 # Table of Content
+- [overview](#o)
 - [Task 1](#t1)
 - [Task 2](#t2)
 - [Task 3](#t3)
@@ -11,7 +13,12 @@
 - [Task 8](#t8)
 - [Task 9](#t9)
 - [Task 10](#t10)
- 
+- [Solution](#s)
+
+<a id=o></a>
+
+## Overview
+
 You are a junior software in a big tech company, the company is working on a new project (personal blog) the ui/ux developers have finished their work then the frontend developers have provided a great dynamic website for us.
 
 it's your turn now as a backend engineer to make our server providing endpoints and talking with database.
@@ -74,3 +81,8 @@ let's make another (/post) endpoint but this time with put request to store new 
 
 ## Task 10
 let's make another (/post) endpoint but this time with post request to update a post make sure to use the token
+
+<a id=s></a>
+
+## Solution
+the template project is [here](./api/) you can try to complete it with yourself and you can find the solution [here](./api-solution/).

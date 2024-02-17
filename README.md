@@ -6,10 +6,30 @@ We strongly believe that alongside the scientific knowledge acquired in college,
 To stay updated with our activities, follow us on [Facebook](https://www.facebook.com/IEEE.AlexSB), [Instagram](https://www.instagram.com/ieeealexsb/), or [LinkedIn](https://www.linkedin.com/company/ieee-alexsb/). Join us in our journey to enhance skills and foster learning!
 
 ## Camp Workflow
-the camp was on 4 days
 
-### Day1 .. javascript & node.js basics
+The camp spanned over 4 days, each focusing on different aspects of web development with the MERN stack.
 
-### Day2 .. Express.js basics
-### Day3 .. databases & mongodb
-### Day4 .. Hands on project
+### Day 1: JavaScript & Node.js Basics
+On the first day, we quickly revised JavaScript syntax and basics, emphasizing its importance as the backbone of Node.js and Express.js.
+
+Content for Day 1 can be found [here](./Day1-JSandnodeJS/).
+
+### Day 2: Express.js Basics
+Day 2 was dedicated to learning the fundamentals of Express.js. Together, we delved into basic web development concepts and learned how to build a server using Express.js and Node.js.
+
+Content for Day 2 can be found [here](./Day2-expressJS/).
+
+### Day 3: Databases & MongoDB
+The focus of the third day was on databases, where we covered key concepts and applied them using MongoDB.
+
+Content for Day 3 can be found [here](./Day3-mongodb/).
+
+### Day 4: Hands-on Project
+The final day was dedicated to a hands-on project, where participants applied their learnings to build a project which is a simple personal blog.
+
+Content for the last day's project can be found [here](./Day4-blog/).
+
+## Conclusion
+thanks for all the participants in the camp and thanks for our volunteers.
+
+and finally stay tuned for more updates and resources!
