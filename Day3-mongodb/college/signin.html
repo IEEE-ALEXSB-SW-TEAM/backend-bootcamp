@@ -7,12 +7,48 @@
 </head>
 <body>
     <h1>Sign In</h1>
-    <form action="/signin" method="POST">
+    <form id="signinForm" action="/signin" method="POST">
         <label for="name">Name:</label><br>
         <input type="text" id="name" name="name" required><br>
         <label for="password">Password:</label><br>
         <input type="password" id="password" name="password" required><br>
-        <button type="submit">Sign In</button>
+        <button type="submit" id="signinButton">Sign In</button>
     </form>
+
+    <script>
+        document.getElementById('signinForm').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent the default form submission
+            
+            // Get form data
+            const formData = new FormData(event.target);
+            const formDataJson = {};
+            formData.forEach((value, key) => { formDataJson[key] = value });
+
+            // Make a POST request to the server
+            fetch('/signin', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(formDataJson)
+            })
+            .then(response => response.json())
+            .then(data => {
+                // Check if the response contains a JWT token
+                if (data.token) {
+                    // Store the JWT token in local storage
+                    localStorage.setItem('jwtToken', data.token);
+                    window.location.replace("./getgpa.html")
+                    // Redirect or perform any other action after successful sign-in
+                } else {
+                    alert('Invalid credentials. Please try again.');
+                }
+            })
+            .catch(error => {
+                console.error('Error:', error);
+                alert('An error occurred. Please try again later.');
+            });
+        });
+    </script>
 </body>
 </html>

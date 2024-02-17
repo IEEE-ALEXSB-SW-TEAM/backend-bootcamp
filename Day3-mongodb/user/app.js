@@ -8,7 +8,7 @@ const index = fs.readFileSync('./index.html');
 
 app.use(bodyParser.urlencoded({ extended: true }));
 
-const uri = "mongodb://localhost:27017/";
+const uri = "mongodb://192.168.1.7:27017/";
 const client = new MongoClient(uri);
 
 app.get('/', (req, res) => {

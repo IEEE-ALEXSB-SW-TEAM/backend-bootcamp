@@ -6,14 +6,16 @@
     <title>Get GPA</title>
 </head>
 <body>
+    <h1>Signed in successfully</h1><br>
     <h1>Get GPA</h1>
     <button id="getGpaButton">Get GPA</button>
     <div id="gpaDisplay"></div>
 
     <script>
-        const token = localStorage.getItem('token');
+        const token = localStorage.getItem('jwtToken');
         if (!token) {
-            window.location.href = '/signin.html';
+            console.log("lol")
+            // window.location.href = '/signin.html';
         }
 
         document.getElementById('getGpaButton').addEventListener('click', async () => {
@@ -24,7 +26,8 @@
                     }
                 });
                 const data = await response.json();
-                document.getElementById('gpaDisplay').innerText = `GPA: ${data.gpa}`;
+                console.log(data)
+                document.getElementById('gpaDisplay').innerHTML = `GPA: ${data.gpa}`;
             } catch (error) {
                 console.error(error);
             }

@@ -8,6 +8,7 @@ const bodyParser = require('body-parser');
 
 const app = express();
 app.use(express.static('./'))
+app.use(express.json());
 
 app.use(bodyParser.urlencoded({ extended: true }));
 
@@ -48,6 +49,7 @@ app.post('/signup', async (req, res) => {
 app.post('/signin', async (req, res) => {
     try {
         const { name, password } = req.body;
+        console.log(req.body)
         const student = await Student.findOne({ name });
 
         if (!student) {

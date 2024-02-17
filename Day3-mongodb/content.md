@@ -126,3 +126,6 @@ MongoDB is an [open source](https://github.com/mongodb/mongo) NoSQL database man
 - models --> student and professor
 - seed script
 - rest api
+
+
+mongodb://192.168.1.7:27017

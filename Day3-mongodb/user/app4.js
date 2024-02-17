@@ -50,7 +50,7 @@ app.post('/user', (req, res) => {
     const body = req.body;
     const data = `${body.Name},${body.Email}`;
     addUser(data);
-    res.end(`
+    res.send(`
         <h1>Congratulations!</h1>
         <p>Your submission has been recorded</p>
         <a href="/">back home</a>
