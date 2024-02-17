@@ -122,3 +122,9 @@ MongoDB is an [open source](https://github.com/mongodb/mongo) NoSQL database man
 ## Restful API
 
 ## Authentication and Authorization
+
+## More resources
+- [what is mongodb](https://youtu.be/RGfFpQF0NpE?si=z2sySCRUnTRbhi9C)
+- [mongodb compass and shell](https://youtu.be/c2M-rlkkT5o?si=9oePq1GGUjR4ek7B)
+- [another mongodb connector and node.js](https://youtu.be/fbYExfeFsI0?si=vo-61B9Yuot30o-V)
+- [mongoose](https://youtu.be/bALyYC10ABw?si=cTRmifrQGUUS2frH)
